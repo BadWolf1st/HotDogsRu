@@ -25,14 +25,18 @@ public class DogsController {
         return "result.html";//TODO: Переделать файл под Template для того что бы грузить туда фотку...
     }
 
+    //@GetMapping(value="home.html"){
+    //
+    //}
+
     @GetMapping(value = "/ErrorFile", produces = MediaType.TEXT_HTML_VALUE)
     public String sendErrorFilePage(){
-        return "";//TODO: Пихнуть HTML файл ошибки
+        return "errorDownloadFile.html";
     }
 
     @GetMapping(value = "/ErrorNoFile", produces = MediaType.TEXT_HTML_VALUE)
     public String sendErrorNoFilePage(){
-        return "";//TODO: Пихнуть HTML файл ошибки (нет файла)
+        return "errorNoFile.html";
     }
 
     @RequestMapping(value = "/uploading", method = RequestMethod.POST)
