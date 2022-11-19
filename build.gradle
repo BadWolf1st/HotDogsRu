@@ -23,6 +23,7 @@ dependencies {
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    //compile group: 'org.tensorflow', name: 'tensorflow-core-platform-gpu', version: '0.4.2'
 }
 
 tasks.named('test') {
